@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma formation BTS SIO — Jakub Boguszynski</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== MENU ===== -->
+    <header class="menu">
+        <a href="index.html" class="logo">Jakub B.</a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formation.html">Formation</a>
+            <a href="index.html#competences">Compétences</a>
+            <a href="index.html#projets">Projets</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== EN-TÊTE DE LA PAGE ===== -->
+        <section class="hero">
+            <p class="etiquette">BTS SIO · Lycée Monnet-Mermoz</p>
+            <h1>Ce que j'ai appris.</h1>
+            <p class="intro">
+                Réseaux, systèmes, support, sécurité : voici les connaissances et les
+                savoir-faire acquis pendant ma formation en BTS SIO.
+            </p>
+            <div class="boutons">
+                <a href="index.html" class="bouton bouton-clair">Retour à l'accueil</a>
+            </div>
+        </section>
+
+        <!-- ===== RÉSEAUX ===== -->
+        <section id="reseaux" class="section gris">
+            <p class="etiquette">Réseaux</p>
+            <h2>Faire communiquer les machines.</h2>
+
+            <div class="grille">
+                <div class="carte">
+                    <h3>Adressage IP</h3>
+                    <p>Adresses IPv4, masques, passerelles et découpage d'un réseau en sous-réseaux.</p>
+                    <p><a class="plus" href="#m-ip">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Commutation et VLAN</h3>
+                    <p>Configuration de switchs et séparation d'un réseau en plusieurs VLAN.</p>
+                    <p><a class="plus" href="#m-vlan">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Câblage et routage</h3>
+                    <p>Câblage d'un réseau local, sertissage de câbles RJ45 et notions de routage entre réseaux.</p>
+                    <p><a class="plus" href="#m-cablage">En savoir plus</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SYSTÈMES ===== -->
+        <section id="systemes" class="section">
+            <p class="etiquette">Systèmes et serveurs</p>
+            <h2>Installer et administrer.</h2>
+
+            <div class="grille">
+                <div class="carte">
+                    <h3>Windows Server</h3>
+                    <p>Installation d'un serveur, Active Directory, gestion des utilisateurs et des droits.</p>
+                    <p><a class="plus" href="#m-windows">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Linux</h3>
+                    <p>Ligne de commande, gestion des utilisateurs et des droits, accès à distance en SSH.</p>
+                    <p><a class="plus" href="#m-linux">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Services réseau</h3>
+                    <p>Mise en place de services comme le DHCP et le DNS pour automatiser un réseau.</p>
+                    <p><a class="plus" href="#m-services">En savoir plus</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SUPPORT ET OUTILS ===== -->
+        <section id="outils" class="section gris">
+            <p class="etiquette">Support et outils</p>
+            <h2>Aider les utilisateurs.</h2>
+
+            <div class="grille">
+                <div class="carte">
+                    <h3>GLPI</h3>
+                    <p>Gestion des tickets d'incident et inventaire du parc informatique.</p>
+                    <p><a class="plus" href="#m-glpi">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Dépannage</h3>
+                    <p>Diagnostic de pannes matérielles et logicielles, assistance aux utilisateurs.</p>
+                    <p><a class="plus" href="#m-depannage">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Git et GitLab</h3>
+                    <p>Suivi des versions d'un projet et travail avec un dépôt en ligne.</p>
+                    <p><a class="plus" href="#m-git">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Web</h3>
+                    <p>Création de pages en HTML et CSS, comme ce portfolio.</p>
+                    <p><a class="plus" href="#m-web">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Bases de données</h3>
+                    <p>Notions de bases de données et premières requêtes SQL.</p>
+                    <p><a class="plus" href="#m-bdd">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Documentation</h3>
+                    <p>Rédaction de procédures et de comptes rendus pour chaque intervention.</p>
+                    <p><a class="plus" href="#m-doc">En savoir plus</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SÉCURITÉ ET CULTURE PRO ===== -->
+        <section id="securite" class="section">
+            <p class="etiquette">Sécurité et culture professionnelle</p>
+            <h2>Travailler proprement.</h2>
+
+            <div class="grille">
+                <div class="carte">
+                    <h3>Cybersécurité</h3>
+                    <p>Mots de passe, sauvegardes, droits d'accès et protection des données personnelles (RGPD).</p>
+                    <p><a class="plus" href="#m-secu">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Anglais technique</h3>
+                    <p>Lecture de documentations et de notices techniques en anglais.</p>
+                    <p><a class="plus" href="#m-anglais">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Veille technologique</h3>
+                    <p>Suivi de l'actualité du numérique pour rester à jour sur les outils et les menaces.</p>
+                    <p><a class="plus" href="#m-veille">En savoir plus</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ET APRÈS ===== -->
+        <section id="apres" class="section gris">
+            <p class="etiquette">Et après ?</p>
+            <h2>La suite du parcours.</h2>
+
+            <div class="grille">
+                <div class="carte">
+                    <h3>Bac+5</h3>
+                    <p>Poursuivre mes études après le BTS pour devenir administrateur ou architecte réseaux.</p>
+                    <p><a class="plus" href="#m-bac5">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Azure AZ-900</h3>
+                    <p>Certification Microsoft sur les fondamentaux du cloud Azure.</p>
+                    <p><a class="plus" href="#m-az900">En savoir plus</a></p>
+                </div>
+                <div class="carte">
+                    <h3>Azure AZ-104</h3>
+                    <p>Certification Microsoft d'administrateur Azure.</p>
+                    <p><a class="plus" href="#m-az104">En savoir plus</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pied">
+        <p>Portfolio créé par Jakub Boguszynski</p>
+    </footer>
+
+
+    <!-- ===== FENÊTRES DE DÉTAIL (s'ouvrent au clic sur une carte) ===== -->
+    <div class="modale" id="m-ip" role="dialog" aria-modal="true" aria-labelledby="t-ip">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-ip">Adressage IP</h3>
+            <p>Chaque appareil d'un réseau possède une adresse IP. J'ai appris à les attribuer proprement et à découper un réseau en plusieurs sous-réseaux pour mieux l'organiser.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Lire une adresse IPv4 et son masque de sous-réseau</li>
+                <li>Calculer l'adresse d'un réseau et sa plage d'adresses utilisables</li>
+                <li>Découper un réseau en sous-réseaux</li>
+                <li>Configurer une adresse IP, un masque et une passerelle sur un poste</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-vlan" role="dialog" aria-modal="true" aria-labelledby="t-vlan">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-vlan">Commutation et VLAN</h3>
+            <p>Un switch relie les machines d'un réseau local. Les VLAN permettent de séparer plusieurs groupes de machines sur le même switch, comme s'ils étaient sur des réseaux distincts.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Configurer un switch administrable</li>
+                <li>Créer des VLAN et y affecter des ports</li>
+                <li>Comprendre pourquoi on sépare les réseaux : sécurité et organisation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-cablage" role="dialog" aria-modal="true" aria-labelledby="t-cablage">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-cablage">Câblage et routage</h3>
+            <p>La base d'un réseau, c'est le câblage. Un routeur relie ensuite plusieurs réseaux entre eux et choisit le chemin des données.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Sertir et tester des câbles RJ45</li>
+                <li>Câbler un petit réseau local</li>
+                <li>Comprendre le rôle d'un routeur entre deux réseaux</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-windows" role="dialog" aria-modal="true" aria-labelledby="t-windows">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-windows">Windows Server</h3>
+            <p>Windows Server permet de centraliser la gestion des utilisateurs et des ressources d'une entreprise grâce à l'annuaire Active Directory.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Installer et configurer un serveur Windows</li>
+                <li>Créer des utilisateurs et des groupes dans Active Directory</li>
+                <li>Gérer les droits d'accès à des dossiers partagés</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-linux" role="dialog" aria-modal="true" aria-labelledby="t-linux">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-linux">Linux</h3>
+            <p>Linux est le système de nombreux serveurs. Il s'administre surtout en ligne de commande, ce qui demande de la rigueur.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Utiliser les commandes de base du terminal</li>
+                <li>Gérer les utilisateurs et les droits sur les fichiers</li>
+                <li>Se connecter à un serveur à distance en SSH</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-services" role="dialog" aria-modal="true" aria-labelledby="t-services">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-services">Services réseau</h3>
+            <p>Certains services rendent un réseau pratique au quotidien sans configuration manuelle sur chaque poste.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>DHCP : attribuer automatiquement les adresses IP aux machines</li>
+                <li>DNS : traduire un nom de site en adresse IP</li>
+                <li>Tester qu'un service fonctionne depuis un poste client</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-glpi" role="dialog" aria-modal="true" aria-labelledby="t-glpi">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-glpi">GLPI</h3>
+            <p>GLPI est un logiciel libre de gestion de parc informatique et de support. Il garde une trace de chaque incident et de chaque machine.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Enregistrer et suivre des tickets d'incident</li>
+                <li>Inventorier les ordinateurs et les périphériques</li>
+                <li>Traiter la demande d'un utilisateur de A à Z</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-depannage" role="dialog" aria-modal="true" aria-labelledby="t-depannage">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-depannage">Dépannage</h3>
+            <p>Le dépannage demande de la méthode : comprendre le problème, chercher la cause, puis corriger sans rien casser. Je l'ai pratiqué en stage.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Diagnostiquer une panne matérielle ou logicielle</li>
+                <li>Installer ou remplacer du matériel</li>
+                <li>Expliquer simplement la solution à l'utilisateur</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-git" role="dialog" aria-modal="true" aria-labelledby="t-git">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-git">Git et GitLab</h3>
+            <p>Git garde l'historique de toutes les modifications d'un projet. Avec GitLab, ce dépôt est hébergé en ligne et peut être partagé.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Enregistrer des versions avec des commits</li>
+                <li>Envoyer et récupérer du code sur un dépôt en ligne</li>
+                <li>Revenir à une version précédente en cas d'erreur</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-web" role="dialog" aria-modal="true" aria-labelledby="t-web">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-web">Web</h3>
+            <p>Créer une page web, c'est écrire sa structure en HTML puis son apparence en CSS. Ce portfolio en est un exemple.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Structurer une page avec les balises HTML</li>
+                <li>Mettre en forme avec le CSS : couleurs, grille, flexbox</li>
+                <li>Adapter la page aux téléphones (responsive)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-bdd" role="dialog" aria-modal="true" aria-labelledby="t-bdd">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-bdd">Bases de données</h3>
+            <p>Une base de données range l'information dans des tables liées entre elles, qu'on interroge avec le langage SQL.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Comprendre tables, champs et relations</li>
+                <li>Écrire des requêtes SQL simples pour lire des données</li>
+                <li>Ajouter, modifier et supprimer des données</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-doc" role="dialog" aria-modal="true" aria-labelledby="t-doc">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-doc">Documentation</h3>
+            <p>Une intervention non documentée est vite oubliée. Écrire ce qu'on a fait permet à toute l'équipe de reprendre le travail.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Rédiger des procédures pas à pas</li>
+                <li>Réaliser des schémas de réseau</li>
+                <li>Écrire un compte rendu d'intervention</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-secu" role="dialog" aria-modal="true" aria-labelledby="t-secu">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-secu">Cybersécurité</h3>
+            <p>La sécurité n'est pas un produit mais une habitude : elle concerne les mots de passe, les droits, les sauvegardes et les données personnelles.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Choisir et gérer des mots de passe solides</li>
+                <li>Mettre en place et vérifier des sauvegardes</li>
+                <li>Limiter les droits d'accès au strict nécessaire</li>
+                <li>Connaître les bases du RGPD</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-anglais" role="dialog" aria-modal="true" aria-labelledby="t-anglais">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-anglais">Anglais technique</h3>
+            <p>Une grande partie de la documentation informatique est écrite en anglais. Savoir la lire fait gagner beaucoup de temps.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Lire une documentation technique</li>
+                <li>Comprendre un message d'erreur en anglais</li>
+                <li>Utiliser le vocabulaire du réseau et du système</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-veille" role="dialog" aria-modal="true" aria-labelledby="t-veille">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-veille">Veille technologique</h3>
+            <p>Le numérique évolue vite : nouvelles failles, nouveaux outils, nouvelles versions. La veille consiste à se tenir informé régulièrement.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Choisir des sources d'information fiables</li>
+                <li>Suivre l'actualité de la cybersécurité</li>
+                <li>Résumer et partager ce que j'ai trouvé</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-bac5" role="dialog" aria-modal="true" aria-labelledby="t-bac5">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-bac5">Bac+5</h3>
+            <p>Je souhaite poursuivre mes études après le BTS pour atteindre un niveau Bac+5 et devenir administrateur ou architecte réseaux.</p>
+            <h4>Mon objectif</h4>
+            <ul>
+                <li>Poursuivre vers une licence puis un master</li>
+                <li>Approfondir les réseaux, la sécurité et le cloud</li>
+                <li>Chercher une alternance pour allier études et expérience</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-az900" role="dialog" aria-modal="true" aria-labelledby="t-az900">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-az900">Azure AZ-900</h3>
+            <p>L'AZ-900 est la certification Microsoft sur les fondamentaux du cloud et d'Azure.</p>
+            <h4>Ce qu'elle couvre</h4>
+            <ul>
+                <li>Les concepts du cloud</li>
+                <li>Les principaux services Azure</li>
+                <li>La sécurité, la gestion et la gouvernance</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-az104" role="dialog" aria-modal="true" aria-labelledby="t-az104">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-az104">Azure AZ-104</h3>
+            <p>L'AZ-104 est la certification Microsoft d'administrateur Azure : elle suit l'AZ-900 et demande de la pratique.</p>
+            <h4>Ce qu'elle couvre</h4>
+            <ul>
+                <li>Les identités et la gouvernance</li>
+                <li>Le stockage et les machines virtuelles</li>
+                <li>Les réseaux virtuels et la supervision</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

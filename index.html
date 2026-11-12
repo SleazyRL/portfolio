@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub Boguszynski — Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== MENU ===== -->
+    <header class="menu">
+        <a href="#accueil" class="logo">Jakub B.</a>
+        <nav>
+            <a href="#apropos">À propos</a>
+            <a href="#parcours">Parcours</a>
+            <a href="formation.html">Formation</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== ACCUEIL ===== -->
+        <section id="accueil" class="hero">
+            <p class="etiquette">Étudiant BTS SIO · Aurillac</p>
+            <h1>Jakub Boguszynski.</h1>
+            <p class="intro">
+                Futur administrateur réseaux. Je découvre le développement web, les réseaux
+                et la cybersécurité à travers des projets concrets.
+            </p>
+            <div class="boutons">
+                <a href="#projets" class="bouton">Voir mes projets</a>
+                <a href="cv/CV_Boguszynski_Jakub.pdf" download class="bouton bouton-clair">Télécharger mon CV</a>
+            </div>
+
+            <div class="chiffres">
+                <div><strong>18</strong><span>ans</span></div>
+                <div><strong>3</strong><span>stages</span></div>
+                <div><strong>3</strong><span>projets</span></div>
+                <div><strong>2</strong><span>langues</span></div>
+            </div>
+        </section>
+
+        <!-- ===== À PROPOS ===== -->
+        <section id="apropos" class="section gris">
+            <p class="etiquette">À propos</p>
+            <h2>Passionné par le numérique.</h2>
+            <p class="intro">
+                J'ai 18 ans et je m'intéresse aux réseaux informatiques et à la cybersécurité.
+                J'aime apprendre en expérimentant : monter un serveur ou câbler un réseau
+                font partie de mes activités.
+            </p>
+
+            <div class="grille">
+                <div class="carte"><h3>Formation</h3><p>BTS SIO</p></div>
+                <div class="carte"><h3>Établissement</h3><p>Lycée Monnet-Mermoz</p></div>
+                <div class="carte"><h3>Localisation</h3><p>Aurillac (15)</p></div>
+                <div class="carte"><h3>Langues</h3><p>Français · Anglais</p></div>
+                <div class="carte"><h3>Objectif</h3><p>Bac+5, puis administrateur ou architecte réseaux</p></div>
+                <div class="carte"><h3>Certifications visées</h3><p>Microsoft Azure AZ-900 et AZ-104</p></div>
+            </div>
+        </section>
+
+        <!-- ===== PARCOURS ===== -->
+        <section id="parcours" class="section">
+            <p class="etiquette">Parcours</p>
+            <h2>Trois stages.</h2>
+
+            <div class="liste">
+                <article class="ligne">
+                    <p class="date">Décembre 2026</p>
+                    <div>
+                        <h3>Dépannage informatique</h3>
+                        <p class="lieu">Lycée Monnet-Mermoz, Aurillac</p>
+                        <p>Dépannage informatique et installation de matériel.</p>
+                    </div>
+                </article>
+                <article class="ligne">
+                    <p class="date">Février – Avril 2026</p>
+                    <div>
+                        <h3>Maintenance</h3>
+                        <p class="lieu">Europe Service, Aurillac</p>
+                        <p>Maintenance du parc informatique et assistance aux utilisateurs.</p>
+                    </div>
+                </article>
+                <article class="ligne">
+                    <p class="date">Juin 2024</p>
+                    <div>
+                        <h3>Stage de découverte</h3>
+                        <p class="lieu">Escotel, Aurillac</p>
+                        <p>Mise en place de la fibre chez les particuliers.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== COMPÉTENCES ===== -->
+        <section id="competences" class="section gris">
+            <p class="etiquette">Compétences</p>
+            <h2>Ce que je sais faire.</h2>
+
+            <ul class="badges">
+                <li><a href="#m-depannage">Dépannage informatique</a></li>
+                <li><a href="#m-glpi">GLPI</a></li>
+                <li><a href="#m-serveurs">Serveurs Linux et Windows</a></li>
+                <li><a href="#m-git">Git · GitLab</a></li>
+                <li><a href="#m-lan">Réseaux LAN</a></li>
+            </ul>
+
+            <div class="boutons suite">
+                <a href="formation.html" class="bouton">Voir ce que j'ai appris en BTS</a>
+            </div>
+        </section>
+
+        <!-- ===== PROJETS ===== -->
+        <section id="projets" class="section">
+            <p class="etiquette">Projets</p>
+            <h2>Ce que j'ai construit.</h2>
+
+            <div class="grille">
+                <article class="carte projet">
+                    <img src="images/console-retro.png" alt="Console Retro">
+                    <h3>Console Retro</h3>
+                    <p>Console imprimée en 3D, propulsée par un Raspberry Pi 4 sous RetroPie.</p>
+                    <p><a class="plus" href="#m-console">En savoir plus</a></p>
+                </article>
+
+                <article class="carte projet">
+                    <img src="images/html-css.png" alt="Portfolio numérique">
+                    <h3>Portfolio numérique</h3>
+                    <p>Mon premier portfolio en HTML5 et CSS3, responsive.</p>
+                    <p><a class="plus" href="#m-portfolio">En savoir plus</a></p>
+                </article>
+
+                <article class="carte projet">
+                    <img src="images/pinas.png" alt="PI-NAS">
+                    <h3>PI-NAS</h3>
+                    <p>Petit serveur NAS monté avec un Raspberry Pi 5 de 16 Go.</p>
+                    <p><a class="plus" href="#m-pinas">En savoir plus</a></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section gris">
+            <p class="etiquette">Contact</p>
+            <h2>Me contacter.</h2>
+            <p class="intro">Disponible pour un stage ou une alternance.</p>
+
+            <div class="grille">
+                <a class="carte lien" href="mailto:jakub.boguszynski@sio-aurillac.fr">
+                    <h3>Email</h3>
+                    <p>jakub.boguszynski@sio-aurillac.fr</p>
+                </a>
+                <a class="carte lien" href="https://www.linkedin.com/in/jakub-boguszynski-b87016449/" target="_blank" rel="noopener">
+                    <h3>LinkedIn</h3>
+                    <p>Mon profil</p>
+                </a>
+                <a class="carte lien" href="https://github.com/SleazyRL" target="_blank" rel="noopener">
+                    <h3>GitHub</h3>
+                    <p>Mes dépôts</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pied">
+        <p>Portfolio créé par Jakub Boguszynski</p>
+    </footer>
+
+
+    <!-- ===== FENÊTRES DE DÉTAIL (s'ouvrent au clic sur une compétence ou un projet) ===== -->
+    <div class="modale" id="m-depannage" role="dialog" aria-modal="true" aria-labelledby="t-depannage">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-depannage">Dépannage</h3>
+            <p>Le dépannage demande de la méthode : comprendre le problème, chercher la cause, puis corriger sans rien casser. Je l'ai pratiqué en stage.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Diagnostiquer une panne matérielle ou logicielle</li>
+                <li>Installer ou remplacer du matériel</li>
+                <li>Expliquer simplement la solution à l'utilisateur</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-glpi" role="dialog" aria-modal="true" aria-labelledby="t-glpi">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-glpi">GLPI</h3>
+            <p>GLPI est un logiciel libre de gestion de parc informatique et de support. Il garde une trace de chaque incident et de chaque machine.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Enregistrer et suivre des tickets d'incident</li>
+                <li>Inventorier les ordinateurs et les périphériques</li>
+                <li>Traiter la demande d'un utilisateur de A à Z</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-serveurs" role="dialog" aria-modal="true" aria-labelledby="t-serveurs">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-serveurs">Serveurs Linux et Windows</h3>
+            <p>Déployer un serveur, c'est l'installer, le configurer et le rendre utile à d'autres machines du réseau, sous Linux comme sous Windows.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Installer un serveur Windows avec Active Directory</li>
+                <li>Installer et administrer un serveur Linux en ligne de commande</li>
+                <li>Mettre en place des services comme le DHCP et le DNS</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-git" role="dialog" aria-modal="true" aria-labelledby="t-git">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-git">Git et GitLab</h3>
+            <p>Git garde l'historique de toutes les modifications d'un projet. Avec GitLab, ce dépôt est hébergé en ligne et peut être partagé.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Enregistrer des versions avec des commits</li>
+                <li>Envoyer et récupérer du code sur un dépôt en ligne</li>
+                <li>Revenir à une version précédente en cas d'erreur</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-lan" role="dialog" aria-modal="true" aria-labelledby="t-lan">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-lan">Réseaux LAN</h3>
+            <p>Un réseau local (LAN) relie les machines d'un même site : bureau, salle de classe ou maison.</p>
+            <h4>Ce que j'ai appris</h4>
+            <ul>
+                <li>Câbler et tester un réseau local</li>
+                <li>Configurer des adresses IP et des VLAN</li>
+                <li>Diagnostiquer une panne de connexion</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-console" role="dialog" aria-modal="true" aria-labelledby="t-console">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-console">Console Retro</h3>
+            <p>Console de jeux portable rétro, conçue de A à Z avec un camarade pour un projet professionnel de lycée. J'ai pris en charge l'électronique et le système.</p>
+            <h4>Ce que j'ai fait</h4>
+            <ul>
+                <li>Raspberry Pi 4 sous RetroPie : NES, SNES, Game Boy et PlayStation 1</li>
+                <li>Boîtier imprimé en 3D avec écran 5 pouces</li>
+                <li>Câblage des boutons, joysticks, alimentation par batterie</li>
+                <li>Installation et configuration du système d'exploitation</li>
+            </ul>
+            <p><a class="bouton" href="https://sleazyrl.github.io/Projet-BAC-2025-2026/" target="_blank" rel="noopener">Voir le site du projet</a></p>
+        </div>
+    </div>
+
+    <div class="modale" id="m-portfolio" role="dialog" aria-modal="true" aria-labelledby="t-portfolio">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-portfolio">Portfolio numérique</h3>
+            <p>Mon premier portfolio, écrit à la main en HTML5 et CSS3.</p>
+            <h4>Ce que j'ai fait</h4>
+            <ul>
+                <li>Structure de la page avec des balises sémantiques</li>
+                <li>Mise en page avec grille et flexbox</li>
+                <li>Adaptation aux téléphones et aux tablettes</li>
+                <li>Thème sombre et plusieurs pages</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modale" id="m-pinas" role="dialog" aria-modal="true" aria-labelledby="t-pinas">
+        <a class="modale-fond" href="#fermer" aria-label="Fermer la fenêtre"></a>
+        <div class="modale-boite">
+            <a class="modale-fermer" href="#fermer" aria-label="Fermer la fenêtre">×</a>
+            <h3 id="t-pinas">PI-NAS</h3>
+            <p>Un petit serveur NAS, c'est-à-dire un espace de stockage accessible par le réseau, monté avec un Raspberry Pi 5 de 16 Go.</p>
+            <h4>Ce que j'ai fait</h4>
+            <ul>
+                <li>Installation et configuration du système</li>
+                <li>Ajout d'un stockage et partage de fichiers sur le réseau local</li>
+                <li>Accès aux fichiers depuis plusieurs appareils</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
