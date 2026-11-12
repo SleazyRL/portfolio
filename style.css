@@ -1,0 +1,587 @@
+/* =====================================================
+   PORTFOLIO – Jakub Boguszynski
+   Style sobre : fond clair, grands titres, bleu en accent
+   ===================================================== */
+
+/* ---------- Base ---------- */
+
+:root {
+    --fond: #16243a;            /* bleu nuit, moins sombre que le noir */
+    --gris: #1f3252;            /* sections alternées et cartes */
+    --texte: #f1f5f9;
+    --texte-doux: #b7c3d4;
+    --bleu: #6db5ff;            /* liens et accents */
+    --bouton: #2b72d6;          /* fond des boutons */
+    --bouton-survol: #3d85ea;
+    --turquoise: #4fd1b5;       /* second accent : étiquettes et chiffres */
+    --trait: #38507a;
+}
+
+html {
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: var(--fond);
+    color: var(--texte);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* ---------- Menu ---------- */
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 24px;
+    padding: 12px 24px;
+    background: rgba(22, 36, 58, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--trait);
+}
+
+.logo {
+    color: var(--texte);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 24px;
+}
+
+.menu nav a {
+    color: var(--texte-doux);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.menu nav a:hover {
+    color: var(--texte);
+}
+
+
+/* ---------- Structure commune ---------- */
+
+.section {
+    padding: 96px 24px;
+    text-align: center;
+}
+
+.section > * {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gris {
+    background: var(--gris);
+}
+
+.etiquette {
+    margin-bottom: 12px;
+    color: var(--turquoise);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 620px;
+    margin: 0 auto 40px;
+    color: var(--texte-doux);
+    font-size: 1.15rem;
+}
+
+
+/* ---------- Accueil ---------- */
+
+.hero {
+    padding: 120px 24px 80px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(109, 181, 255, 0.2), transparent 65%);
+}
+
+.hero h1 {
+    font-size: clamp(2.6rem, 8vw, 5.5rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.boutons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 980px;
+    background: var(--bouton);
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.bouton:hover {
+    background: var(--bouton-survol);
+}
+
+.bouton-clair {
+    background: var(--gris);
+    color: var(--texte);
+}
+
+.bouton-clair:hover {
+    background: var(--trait);
+}
+
+/* Chiffres clés */
+.chiffres {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 720px;
+    margin: 80px auto 0;
+    padding-top: 32px;
+    border-top: 1px solid var(--trait);
+}
+
+.chiffres strong {
+    display: block;
+    color: var(--turquoise);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.chiffres span {
+    color: var(--texte-doux);
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Cartes (à propos, projets, contact) ---------- */
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: left;
+}
+
+.carte {
+    padding: 28px;
+    background: var(--fond);
+    border-radius: 18px;
+}
+
+.gris .carte {
+    background: var(--fond);
+}
+
+.section:not(.gris) .carte {
+    background: var(--gris);
+}
+
+.carte h3 {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+}
+
+.carte p {
+    color: var(--texte-doux);
+    font-size: 0.95rem;
+}
+
+/* Projets : image en haut de la carte */
+.projet {
+    padding: 0 0 28px;
+    overflow: hidden;
+}
+
+.projet img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin-bottom: 24px;
+    background: var(--trait);
+}
+
+.projet h3,
+.projet p {
+    padding: 0 28px;
+}
+
+/* Cartes de contact cliquables */
+.lien {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.lien:hover {
+    transform: translateY(-3px);
+}
+
+.lien p {
+    color: var(--bleu);
+}
+
+
+/* ---------- Parcours ---------- */
+
+.liste {
+    text-align: left;
+    margin-top: 48px;
+}
+
+.ligne {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    padding: 28px 0;
+    border-top: 1px solid var(--trait);
+}
+
+.ligne:last-child {
+    border-bottom: 1px solid var(--trait);
+}
+
+.date {
+    color: var(--texte-doux);
+    font-size: 0.95rem;
+}
+
+.ligne h3 {
+    font-size: 1.3rem;
+}
+
+.lieu {
+    margin: 4px 0 8px;
+    color: var(--bleu);
+    font-size: 0.95rem;
+}
+
+
+/* ---------- Compétences ---------- */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.badges li {
+    padding: 10px 22px;
+    background: var(--fond);
+    border-radius: 980px;
+    font-size: 1rem;
+}
+
+
+/* ---------- Pied de page ---------- */
+
+.pied {
+    padding: 32px 24px;
+    border-top: 1px solid var(--trait);
+    color: var(--texte-doux);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 800px) {
+
+    .section {
+        padding: 64px 20px;
+    }
+
+    .hero {
+        padding: 72px 20px 56px;
+    }
+
+    .grille {
+        grid-template-columns: 1fr;
+    }
+
+    .chiffres {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 0;
+    }
+
+    .ligne {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+}
+
+
+/* ---------- Liens dans le texte ---------- */
+
+.carte p a,
+.intro a {
+    color: var(--bleu);
+    text-decoration: none;
+}
+
+.carte p a:hover,
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.projet p:last-child {
+    margin-top: 12px;
+}
+
+
+/* ---------- Bouton placé sous une liste ---------- */
+
+.suite {
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+/* ---------- Cartes cliquables ---------- */
+
+.carte {
+    position: relative;
+}
+
+/* Le lien "En savoir plus" couvre toute la carte : un clic n'importe où l'ouvre */
+.plus::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.carte:hover .plus {
+    text-decoration: underline;
+}
+
+.badges li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.badges li:hover {
+    background: var(--gris);
+}
+
+
+/* ---------- Fenêtre de détail (modale) ---------- */
+
+/* Cachée par défaut. Elle s'affiche quand l'adresse se termine par son id (#m-...) */
+.modale {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(10, 20, 38, 0.55);
+    backdrop-filter: blur(2px);                /* flou très léger derrière le CV */
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.modale:target {
+    display: flex;
+    animation: apparition 0.2s ease;
+}
+
+/* Bloque le défilement de la page derrière la fenêtre */
+body:has(.modale:target) {
+    overflow: hidden;
+}
+
+/* Clic en dehors de la boîte = fermeture */
+.modale-fond {
+    position: absolute;
+    inset: 0;
+    cursor: default;
+}
+
+.modale-boite {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 36px 32px 32px;
+    background: var(--gris);
+    border: 1px solid var(--trait);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.modale-boite h3 {
+    margin-bottom: 12px;
+    padding-right: 32px;
+    font-size: 1.6rem;
+}
+
+.modale-boite h4 {
+    margin: 24px 0 8px;
+    font-size: 1rem;
+}
+
+.modale-boite p {
+    color: var(--texte-doux);
+}
+
+.modale-boite ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--texte-doux);
+}
+
+.modale-boite li {
+    margin-bottom: 6px;
+}
+
+.modale-boite .bouton {
+    margin-top: 20px;
+}
+
+.modale-fermer {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--trait);
+    color: var(--texte);
+    font-size: 1.4rem;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modale-fermer:hover {
+    background: var(--texte-doux);
+    color: var(--fond);
+}
+
+@keyframes apparition {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modale:target {
+        animation: none;
+    }
+}
+
+
+/* ---------- CV : document seul au premier plan ---------- */
+.modale-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    pointer-events: none; /* laisse les clics à côté du CV atteindre le fond cliquable */
+}
+
+/* Le titre et le lien ne sont plus affichés : seul le CV reste visible. */
+.modale-cv .cv-entete {
+    display: none;
+}
+
+.modale-cv iframe {
+    display: block;
+    pointer-events: auto; /* le document reste interactif pour le défilement */
+    width: min(82vw, 1120px);
+    height: 88vh;
+    flex: 0 1 auto;
+    margin: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+/* La croix reste accessible au-dessus du document. */
+.modale-cv > .modale-fermer {
+    position: fixed;
+    z-index: 2;
+    pointer-events: auto;
+    top: 18px;
+    right: 22px;
+}
+
+@media (max-width: 600px) {
+    .modale {
+        padding: 0;
+    }
+
+    .modale-cv iframe {
+        width: 92vw;
+        height: 88vh;
+    }
+
+    .modale-cv > .modale-fermer {
+        top: 10px;
+        right: 10px;
+    }
+}
